@@ -1,12 +1,10 @@
+# Source documents (PDFs, private files)
+/sources/
+sources/
+
 # macOS
 .DS_Store
 
-# Editor
+# Editor directories
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Temp files
-*.tmp
-*~

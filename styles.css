@@ -24,10 +24,27 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Under Construction Banner */
+.construction-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
 /* Navigation */
 .nav {
     position: fixed;
-    top: 0;
+    top: 2rem;
     left: 0;
     right: 0;
     display: flex;
@@ -113,7 +130,27 @@ body {
     font-size: 1.1rem;
     color: var(--text-secondary);
     letter-spacing: 0.1em;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+}
+
+.hero-social a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    letter-spacing: 0.05em;
+}
+
+.hero-social a:hover {
+    color: var(--text-primary);
 }
 
 .hero-grid {
@@ -269,6 +306,59 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
     letter-spacing: 0.02em;
+}
+
+/* Social Embeds (Last Minute Movies page) */
+.social-embeds {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 4rem;
+}
+
+.embed-container {
+    text-align: center;
+}
+
+.embed-container h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
+.youtube-embed,
+.instagram-embed {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.youtube-embed iframe {
+    display: block;
+}
+
+.instagram-embed {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-dark);
+}
+
+.social-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+    padding: 0.5rem 0;
+}
+
+.social-link:hover {
+    color: var(--text-primary);
 }
 
 /* Lightbox */
