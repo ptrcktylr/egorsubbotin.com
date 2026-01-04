@@ -308,6 +308,40 @@ body {
     letter-spacing: 0.02em;
 }
 
+/* Vimeo Embeds */
+.vimeo-section {
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    display: grid;
+    gap: 4rem;
+}
+
+.vimeo-embed-container {
+    text-align: center;
+}
+
+.vimeo-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
+.vimeo-wrapper {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.vimeo-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+    letter-spacing: 0.03em;
+}
+
 /* Social Embeds (Last Minute Movies page) */
 .social-embeds {
     max-width: 1000px;
