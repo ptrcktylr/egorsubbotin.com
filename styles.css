@@ -221,30 +221,26 @@ body {
 }
 
 .project-media {
-    aspect-ratio: 16 / 9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
     background-color: var(--bg-dark);
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.project-media:hover {
-    border-color: var(--text-primary);
 }
 
 .project-media img,
 .project-media video {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
     transition: var(--transition);
 }
 
-.project-media:hover img,
-.project-media:hover video {
-    transform: scale(1.05);
+.project-media img:hover,
+.project-media video:hover {
+    border-color: var(--text-primary);
+    transform: scale(1.02);
 }
 
 .project-info {
@@ -385,6 +381,34 @@ body {
     .hero-card {
         padding: 2rem 1.5rem;
     }
+
+    .project-media {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.4rem;
+    }
+
+    .portfolio-title {
+        font-size: 2rem;
+    }
+
+    .portfolio-description {
+        font-size: 1rem;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 2rem;
+        left: 0.5rem;
+    }
+
+    .lightbox-next {
+        right: 0.5rem;
+        left: auto;
+    }
+
+    .lightbox-close {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -400,6 +424,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+        font-size: 0.75rem;
     }
 
     .contact {
@@ -409,5 +434,40 @@ body {
 
     .separator {
         display: none;
+    }
+
+    .home-hero,
+    .portfolio-page {
+        padding: 5rem 1rem 1rem;
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-description {
+        font-size: 0.9rem;
+    }
+
+    .project-media {
+        grid-template-columns: 1fr;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+    }
+
+    .lightbox-image {
+        max-height: 70vh;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 1.5rem;
+        padding: 0.5rem;
     }
 }
