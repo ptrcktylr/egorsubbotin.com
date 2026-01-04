@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 4rem 4rem;
+    padding: 10rem 4rem 4rem;
 }
 
 .hero-content {
@@ -182,7 +182,7 @@ body {
 /* Portfolio Pages */
 .portfolio-page {
     min-height: 100vh;
-    padding: 8rem 4rem 4rem;
+    padding: 10rem 4rem 4rem;
 }
 
 .portfolio-header {
@@ -383,11 +383,11 @@ body {
     }
 
     .home-hero {
-        padding: 10rem 2rem 2rem;
+        padding: 12rem 2rem 2rem;
     }
 
     .portfolio-page {
-        padding: 8rem 2rem 2rem;
+        padding: 10rem 2rem 2rem;
     }
 
     .hero-grid {
@@ -462,11 +462,11 @@ body {
     }
 
     .home-hero {
-        padding: 8rem 1rem 1rem;
+        padding: 10rem 1rem 1rem;
     }
 
     .portfolio-page {
-        padding: 6rem 1rem 1rem;
+        padding: 8rem 1rem 1rem;
     }
 
     .portfolio-title {
